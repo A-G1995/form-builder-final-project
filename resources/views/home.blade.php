@@ -1,10 +1,17 @@
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
+  <title>Home</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
     <!-- Latest compiled and minified CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
     <!-- Optional theme -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
@@ -30,22 +37,22 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-                  <li><a href="/create-form">Create Form</a></li>
-                  <li><a href="/about">About US</a></li>
+                  <li class="active"><a href="/">خانه <span class="sr-only">(current)</span></a></li>
+                  <li><a href="/create-form">فرم ساز</a></li>
+                  <li><a href="/about">درباره</a></li>  
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 @auth
-                    <li>Hi {{$user->name}}!</li>
-                    <li><a href="/logout">Logout</a></li>
+                    <li>سلام {{$user->name}}!</li>
+                    <li><a href="/logout">خروج</a></li>
                 @endauth
                 @guest
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="/register">Register</a></li>
+                    <li><a href="/login">ورود</a></li>
+                    <li><a href="/register">ثبت نام</a></li>
                 @endguest
                 </ul>
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+              </div>
+            </div>
           </nav>
 </header>
 
@@ -89,17 +96,7 @@
   <span class="letter">N</span>
   </div>
 </div>
-<!-- <div class="container">
-<div class="intro">
-<h1>Hi , You Can Create Form Here And Share With Others !</h1>
-</div>
-<div class="scroller">
-<div class="inner">
-<span>USC Form Builder</span>
-<span>Created By Aryan</span>
-</div>
-</div>
-</div> -->
+
 <style>
 body {
   text-align: center;
@@ -116,16 +113,7 @@ body {
           transform: translate(-50%);
 }
 
-p {
-  top: 10%;
-  left: 80%;
-  width: 90%;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color:  #2e4053 ;
-  opacity: 1;
-}
+
 
 .letter {
   width: 24px;
@@ -630,10 +618,7 @@ p {
     margin-top: 24px;
   }
 }
-
-
 /* New Added */
-
 
 .letter:nth-child(17):before {
   content: "9241583067";
@@ -1147,17 +1132,7 @@ p {
   }
 }
 
-
-
-/* End of css */
-
-
-
-
-
-
-
-
+/* End of letters */
 
 
 * {
@@ -1255,17 +1230,6 @@ p {
    0%  {color: #000;}
    100% {color: #2c90c6;}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @-webkit-keyframes scroll {
    11%  {margin-top: 0px;}
