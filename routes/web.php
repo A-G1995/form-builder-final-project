@@ -25,9 +25,9 @@ Route::get('/forms/{id}', 'FormController@show');
 
 
 
-Route::get('/about', function () {
+Route::get('/contact', function () {
     $user = Auth::user();
-    return view('about', compact('user'));
+    return view('contact', compact('user'));
 });
 
 Route::get('/logout', function () {

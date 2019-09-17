@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
-  <title>About</title>
+  <title>Contact Us</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <!-- Latest compiled and minified CSS -->
@@ -31,7 +31,7 @@
                 <ul class="nav navbar-nav">
                   <li><a href="/">خانه</a></li>
                   <li><a href="/create-form">فرم ساز</a></li>
-                  <li class="active"><a href="/about">تماس با ما<span class="sr-only">(current)</span></a></li>
+                  <li class="active"><a href="/contact">تماس با ما<span class="sr-only">(current)</span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 @auth
