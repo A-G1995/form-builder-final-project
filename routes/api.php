@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/form', 'FormController@create');
+Route::post('/form','FormController@create');
 Route::post('/form/{id}/response', 'ResponseController@store');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {

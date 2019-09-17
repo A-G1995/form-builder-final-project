@@ -40,7 +40,7 @@
                 <ul class="nav navbar-nav">
                   <li><a href="/">خانه</a></li>
                   <li class="active"><a href="/create-form">فرم ساز<span class="sr-only">(current)</span></a></li>
-                  <li><a href="/about">درباره</a></li>
+                  <li><a href="/about">تماس با ما</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 @auth

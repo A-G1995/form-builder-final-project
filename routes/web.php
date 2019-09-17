@@ -19,6 +19,9 @@ Route::get('/', function () {
 
 Route::get('/create-form', 'FormController@index');
 Route::get('/forms/{id}', 'FormController@show');
+// Route::get('/forms/{id}', 'FormController@showResponse');
+
+
 
 Route::get('/about', function () {
     $user = Auth::user();

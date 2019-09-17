@@ -39,7 +39,7 @@
                 <ul class="nav navbar-nav">
                   <li class="active"><a href="/">خانه <span class="sr-only">(current)</span></a></li>
                   <li><a href="/create-form">فرم ساز</a></li>
-                  <li><a href="/about">درباره</a></li>  
+                  <li><a href="/about">تماس با ما</a></li>  
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 @auth

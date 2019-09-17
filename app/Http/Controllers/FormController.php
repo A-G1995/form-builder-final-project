@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Form;
+// use App\Response;
 use App\User;
 use Auth;
 use Response;
@@ -31,6 +32,19 @@ class FormController extends Controller
         $user = Auth::user();
         return view('form', compact('user'));
     }
+
+    // public function showResponse(Request $request)
+    // {
+    //     $formId = $request->route()->parameters['id'];
+    //     $form = Response::find($formId);
+    //     if (empty($form)) {
+    //         abort(404);
+    //     }
+    //     $user = User::find($form->user_id);
+    //     return view('render_form', ['formId' => $form->id, 'formData' => $form->form, 'user' => $user]);
+    // }
+
+
 
     public function create(Request $request)
     {

@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"></script>
+
     <script src="https://formbuilder.online/assets/js/form-builder.min.js"></script>
     <script src="https://formbuilder.online/assets/js/form-render.min.js"></script>
     <style>
@@ -48,14 +49,14 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/create-form">Create Form</a></li>
-                  <li><a href="/about">About US</a></li>
+                  <li><a href="/">خانه</a></li>
+                  <li><a href="/create-form">فرم ساز</a></li>
+                  <li><a href="/about">تماس با ما</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 @auth
                     <li>سلام {{$user->name}}!</li>
-                    <li><a href="/logout">Logout</a></li>
+                    <li><a href="/logout">خروج</a></li>
                 @endauth
 
                 @guest
