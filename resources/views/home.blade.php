@@ -618,7 +618,6 @@ body {
     margin-top: 24px;
   }
 }
-/* New Added */
 
 .letter:nth-child(17):before {
   content: "9241583067";
@@ -1132,9 +1131,6 @@ body {
   }
 }
 
-/* End of letters */
-
-
 * {
    margin: 0px;
    padding: 0px;
@@ -1212,9 +1208,6 @@ p {
    animation-fill-mode: forwards;
    
 }
-
-
-
 
 @-webkit-keyframes color {
    0%  {color: #000;}

@@ -45,7 +45,7 @@
                 <ul class="nav navbar-nav navbar-right">
                 @auth
                     <li>سلام {{$user->name}}!</li>
-                    <li><a href="/logout">Logout</a></li>
+                    <li><a href="/logout">خروج</a></li>
                 @endauth
 
                 @guest

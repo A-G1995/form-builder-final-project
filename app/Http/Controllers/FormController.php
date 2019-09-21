@@ -12,39 +12,16 @@ use Redirect;
 
 class FormController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+   
     public function __construct()
     {
-        // $this->middleware('auth');
-    }
+        }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
         $user = Auth::user();
         return view('form', compact('user'));
     }
-
-    // public function showResponse(Request $request)
-    // {
-    //     $formId = $request->route()->parameters['id'];
-    //     $form = Response::find($formId);
-    //     if (empty($form)) {
-    //         abort(404);
-    //     }
-    //     $user = User::find($form->user_id);
-    //     return view('render_form', ['formId' => $form->id, 'formData' => $form->form, 'user' => $user]);
-    // }
-
-
 
     public function create(Request $request)
     {

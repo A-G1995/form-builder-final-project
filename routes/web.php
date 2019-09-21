@@ -19,12 +19,6 @@ Route::get('/', function () {
 
 Route::get('/create-form', 'FormController@index');
 Route::get('/forms/{id}', 'FormController@show');
-
-
-// Route::get('/forms/{id}', 'FormController@showResponse');
-
-
-
 Route::get('/contact', function () {
     $user = Auth::user();
     return view('contact', compact('user'));
@@ -35,7 +29,4 @@ Route::get('/logout', function () {
     return view('home');
 });
 
-
 Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
